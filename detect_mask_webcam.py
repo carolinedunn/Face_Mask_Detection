@@ -1,5 +1,5 @@
 # USAGE
-# python detect_mask_video.py
+# python detect_mask_webcam.py
 
 # import the necessary packages
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
