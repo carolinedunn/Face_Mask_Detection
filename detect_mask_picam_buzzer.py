@@ -139,13 +139,6 @@ while True:
 			green.off()
 			red.on()
 		
-		#label = "Thank you" if mask > withoutMask else "Please wear your face mask"
-		#color = (0, 255, 0) if label == "Thank you" else (0, 0, 255)
-
-		# include the probability in the label
-		#label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
-		
-
 		# display the label and bounding box rectangle on the output
 		# frame
 		cv2.putText(frame, label, (startX-50, startY - 10),
@@ -156,16 +149,6 @@ while True:
 	cv2.imshow("Face Mask Detector", frame)
 	key = cv2.waitKey(1) & 0xFF
 	
-	#if no mask detected, buzzer on and red light, otherwise green
-	# if withoutMask > mask:
-		# buzzer.on()
-		# green.off()
-		# red.on()
-	# else:
-		# buzzer.off()
-		# red.off()
-		# green.on()
-
 	# if the `q` key was pressed, break from the loop
 	if key == ord("q"):
 		break
