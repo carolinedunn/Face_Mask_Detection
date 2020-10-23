@@ -127,15 +127,9 @@ while True:
 			color = (0, 255, 0)
 
 		else:
-			label = "Please wear your face mask"
+			label = "No Face Mask Detected"
 			color = (0, 0, 255)
 		
-		#label = "Thank you" if mask > withoutMask else "Please wear your face mask"
-		#color = (0, 255, 0) if label == "Thank you" else (0, 0, 255)
-
-		# include the probability in the label
-		#label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
-
 		# display the label and bounding box rectangle on the output
 		# frame
 		cv2.putText(frame, label, (startX-50, startY - 10),
