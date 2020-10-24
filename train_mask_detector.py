@@ -1,5 +1,5 @@
 # USAGE
-# python train_mask_detector.py --dataset dataset
+# python3 train_mask_detector.py --dataset dataset
 
 # import the necessary packages
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
